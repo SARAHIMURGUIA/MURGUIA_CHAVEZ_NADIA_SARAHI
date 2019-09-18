@@ -1,0 +1,292 @@
+\documentclass[letterpaper, openright, 12pt, spanish]{report}
+%Gummi|065|=)
+\usepackage{graphicx}
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\caption{}
+\centering
+\includegraphics[width=5cm]{../Escritorio/UPCDLZMDG5783-logo.png}
+
+\end{center}
+\end{figure}
+
+\textbf{UNIVERSIDAD POLITECNICA METROPOLITANA DE GUADALAJARA}\\
+
+\vspace*{0.6in}
+\begin{large}
+\textbf{Par de Rotaci\'on y Cuaternios}\\
+\end{large}
+
+\vspace*{0.1in}
+\begin{large}
+Cinematica de Robots\\
+\end{large}
+
+\vspace*{0.2in}
+\begin{large}
+Nadia Sarahi Murgu\'ia Ch\'avez\\
+\end{large}
+
+\vspace*{0.1in}
+\begin{large}
+Ing. Mecatr\'onica 7A\\
+\end{large}
+
+\vspace*{0.5in}
+\begin{large}
+17 de septiembre de 2019
+\end{large}
+
+\end{center}
+
+\end{titlepage}
+
+\newpage
+
+\section{Par de Rotaci\'on}
+
+Definici\'on:
+
+La representaci\'on de la orientaci\'on de un sistema OUVW (es decir, la representaci\'on espacial del robot con respecto al plano), con respecto al sistema de referencia OXYZ (es decir, los ejes del plano con respecto al origen) tambien puede realizarse mediante la definici\'on de un vector y un \'angulo: 
+
+\begin{displaymath}
+k=[k_{x} k_{y}	k_{z}]
+\end{displaymath}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.80]{/home/sarha13/Escritorio/images.png}
+\caption{Sistema OUVW en un sistema OXYZ}
+\label{Figura 1}
+\end{figure}
+
+tal que el sistema OUVW corresponde al sistema OXYZ girando un \'angulo $\theta$ sobre el eje k. El eje k ha de pasar por el origen O de ambos sistemas.
+Al par (k, $\theta$) se le denomina par de rotacion y es \'unico.
+
+\begin{displaymath}
+Rot{(k,\theta)p}=pcos\theta-{(kxp)}sin\theta+{(k\bullet p)(1-cos\theta)}
+\end{displaymath}
+
+\section{Cuaternios}
+Sea \textbf{C} el conjunto de n\'umeros complejos tal que:
+
+\begin{displaymath}
+C={[a+b/a,b\in\Re]}
+\end{displaymath}
+
+El conjunto \textbf{R}, \textbf{C}, \textbf{Q} forma un \textit{campo}
+
+Definicion:\\
+Un campo \textbf{F} consiste de un conjunto con dos operaciones (suma y producto) en el que se demuestran las propiedades de cerradura, conmutatividad, neutro, asociatividad, inverso y distributividad.
+
+Definicion:\\
+Los cuaternios se definen como el conjunto de n\'umeros de la forma:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/sarha13/Escritorio/Identificacion-de-juntas-y-ejes-de-rotacion-del-robot-PUMA-761-1.png}
+\caption{Los cuaternios y su aplicacion en robotica}
+\label{Figura 2.}
+\end{figure}
+
+\begin{displaymath}
+H={[a+b\textbf{I}+c\textbf{J}+d\textbf{K}/a,b,c,d\in\Re]}
+\end{displaymath}
+\begin{displaymath}
+\textbf{I}^2=\textbf{J}^2=\textbf{K}^2=\textbf{IJK}=-1
+\end{displaymath}
+
+S\'i
+
+\textbf{I}= \[\left(
+\begin{array}{lcr}
+0 &1\\
+-1 &0
+\end{array}
+\right)
+\]
+
+\textbf{J}= \[\left(\begin{array}{lcr}
+0 &i\\
+i &0
+\end{array}
+\right)
+\]
+
+\textbf{K}= \[
+\left(\begin{array}{lcr}
+i &0\\
+0 &i
+\end{array}
+\right)
+\]
+
+Se define el cuartenio: \textit{h}$\in\textit{\textbf{H}}/\textit{h}=$
+\[
+ \left(\begin{array}{lcr}
+ a+di &b+ci\\
+ -b+ci &a-di
+ \end{array}
+ \right)
+ \]
+ 
+	Este conjunto de cuaternios cumple todas las propiedades de un campo excepto al conmutatividad.\\
+Por lo tanto recibe en nombre de \textit{\textbf{anillo}}\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/sarha13/Escritorio/images12.png}
+\caption{Anillo}
+\label{Figura 3.}
+\end{figure}
+
+Propiedades:\\
+
+\begin{displaymath}
+||\textit{h}||_2=a^2+b^2+c^2+d^2
+\end{displaymath}
+
+\begin{displaymath}
+\bar{h}=a-b\textbf{I}-c\textbf{J}-d\textbf{K}
+\end{displaymath}
+
+\begin{displaymath}
+h\bar{h}=\bar{h}h
+\end{displaymath}
+
+\begin{displaymath}
+h^{-1}=\frac{\bar{h}}{\parallel{h}\parallel}
+ \end{displaymath}
+
+ En rob\'otica, los cuaternios se utilizan para la locaci\'on espacial de un cuerpo s\'olido aunque con un ligero cambio de notaci\'on:\\
+
+\begin{displaymath} 
+\textsc{Q}=
+{q_0 q_1 q_2 q_3/q_0\textbf{e}+q_1\textbf{i}+q_2\textbf{j}+q_3\textbf{k}}=\textbf{Q}(s, \textbf{v})
+\end{displaymath}
+
+s: representa la parte escalar\\
+
+\textbf{v}: representa la parte vectorial
+
+\newpage
+
+\subsection{Operaciones Algebraicas}
+
+\subsubsection{Ley de composici\'on interna}
+
+\begin {center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+	o & \textbf{e} & \textbf{i} & \textbf{j} & \textbf{k}\\
+\hline
+	\textbf{e} & e & i & j & k\\
+\hline
+	\textbf{i} & j & -e & k & -j\\
+\hline
+	\textbf{j} & j & -k & -e & i\\
+\hline
+	\textbf{k} & k & J & -i & -e\\
+\hline 
+\end{tabular}
+\end {center}
+
+\subsubsection{Producto de cuaternios}
+
+\begin{displaymath}
+Q_3=Q_1\circ Q_2=(s_1, \textbf{v}_1)\circ (s_2,\textbf{v}_2)=(s_1 s_2-\textbf{v}_1 \textbf{v}_2, \textbf{v}_1 \times\textbf{v}_2+s_1\textbf{v}_2+s_2\textbf{v}_1)
+\end{displaymath}
+
+NO es conmutativo
+
+\subsubsection{Suma de cuaternios}
+
+\begin{displaymath}
+Q_3=Q_1+Q_2=(s_1,\textbf{v}_1)+(s_2, \textbf{v}_2)=(s_1+s_2, \textbf{v}_1+\textbf{v}_2)
+\end{displaymath}
+
+\subsubsection{Producto escalar}
+
+\begin{displaymath}
+Q_3=\textbf{a}Q_2=\textbf{a}(s_2, \textbf{v}_2)=(\textbf{a}s_2, \textbf{a}\textbf{v}_2)
+\end{displaymath}
+
+\subsubsection{Norma e Inverso}
+
+\begin{displaymath}
+Q\circ Q^*=(q^2_0+q^2_1+q^2_2+q^2_3)\textbf{e} \Longrightarrow Numero Real
+\end{displaymath}
+
+Norma:\\
+
+\begin{displaymath}
+\parallel{Q}\parallel=\sqrt{q^2_0+q^2_1+q^2_2+q^2_3}
+\end{displaymath}
+
+Inverso:
+
+\begin{displaymath}
+Q^{-1}=\frac{Q^*}{\parallel{Q}\parallel}
+\end{displaymath}
+
+\newpage
+
+\subsection{Utilizaci\'on de los cuaternios}
+
+\subsubsection{Giro $
+\theta
+$ sobre un eje k}
+
+\begin{displaymath}
+Q=Rot(\textbf{k},\theta)=(cos\frac{\theta}{2}, \textbf{k}sin\frac{\theta}{2})
+\end{displaymath}
+
+De esta asociaci\'on arbitraria y gracias a las propiedades de los cuaternios, se obtiene una importante herramienta anal\'itica para el tratamiento de giros y cambios de orientaci\'on.
+
+\subsubsection{Rotaci\'on del cuaternio \textbf{Q} a un vector \textbf{r}}
+
+\begin{displaymath}
+Q\circ (0,\textbf{r})\circ Q
+\end{displaymath}
+
+\subsubsection{Composicion de rotaciones}
+
+\begin{displaymath}
+Q_3=Q_1\circ Q_2
+\end{displaymath}
+
+El resultado de rotar seg\'un el cuaternio $Q_1$,para posteriormente rotar seg\'un $Q_2$, es el mismo que el de rotar seg\'un  $Q_3$. Es importante tener en cuenta que el producto de cuaternios no es conmutativo.
+
+\begin{displaymath}
+Q_1 \circ Q_2\neq Q_2\circ Q_1
+\end{displaymath}
+
+\subsubsection{Rotaci\'on y Traslaci\'on}
+
+El resultado de aplicar una traslaci\'on \textbf{p} al vector \textbf{r} seguida de una rotaci\'on \textbf{Q} al sistema OXYZ, es un nuevo sistema OUVW, tal que las coordenadas de un vector \textbf{r} en el sistema OXYZ, conocidas en OUVW ser\'an:
+
+\begin{displaymath}
+(0, \textbf{r}_XYZ)=\textbf{Q}\circ (0, \textbf{r}_UVW)\circ \textbf{Q}^*+(0, \textbf{p})
+\end{displaymath}
+
+Si se mantiene el sistema OXYZ fijo y se traslada el vector \textbf{r} seg\'un \textbf{p} y luego se le rota seg\'un \textbf{Q} se obtendr\'a el vector \textbf{r'} de coordenadas:
+
+\begin{displaymath}
+(0, \textbf{r'}=\textbf{Q}\circ (0,\textbf{r+p})\circ \textbf{Q}^*
+\end{displaymath}
+
+\newpage
+
+\begin{thebibliography}{X}
+\bibitem{Ollero}
+\textsc{ROBOTICA Manipuladores y robots moviles, Ollero Baturone An\'ibal} \textit{Rob\'otica Manipuladores y robots m\'oviles}, primera edici\'on, marcombo, Barcelona (España) 2001,    
+\bibitem{Cecilia}
+\textsc{Herramientas Matematicas para la localizacion espacial} \textit{Cecilia Garcia}, M.H, segunda edici\'on, Chile 2009 
+\end{thebibliography}
+\end{document}
