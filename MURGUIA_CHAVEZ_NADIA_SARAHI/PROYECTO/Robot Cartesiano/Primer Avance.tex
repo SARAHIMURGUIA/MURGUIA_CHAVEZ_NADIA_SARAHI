@@ -1,0 +1,327 @@
+\documentclass[letter,operight,12pt,spanish]{report}
+
+\usepackage{color}
+
+\usepackage{graphicx}
+
+\usepackage{epsfig}
+
+\usepackage{multirow}
+
+\usepackage{colortbl}
+
+\usepackage[table]{xcolor}
+
+\usepackage{vmargin}
+
+\usepackage[spanish]{babel}
+
+%Gummi|065|=)
+\title{\textbf{Robot Cartesiano.}}
+\author{Cinematica de Robots.\\
+		Ingenieria en Mecatr\'onica 7A}
+\date{20 de septiembre de 2019}
+
+\begin{document}
+
+\thispagestyle{empty} %% PARA QUITAR FORMATO DE PIES Y ENCABEZADOS DE PÁGINA A LA PORTADA
+%
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%% MINIPAGE PARA EL LOGO DEL LADO IZQUIERDO (UNIVERSIDAD) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[c][0.15\textheight][c]{0.14\textwidth}
+    \begin{center}
+\includegraphics[height=2cm, keepaspectratio=true]{/home/sarha13/Escritorio/upzmg.jpeg} %% LOGO IZQUIERDO
+    \end{center}
+\end{minipage}
+%}
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%%%%%% MINIPAGE PARA EL CUERPO DE LA PORTADA (NOMBRES, TITULOS, ETC.) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[c][0.17\textheight][t]{0.7\textwidth}
+    \begin{center}
+        {\scshape \Huge Universidad Politecnica ZMG} %% NOMBRE DE LA UNIVERSIDAD
+        \vspace{.5cm}   %% DEFINE EL ESPACIO ENTRE EL NOMBRE DE LA UNIVERSIDAD Y LA LÍNEA DOBLE
+        \hrule height2.5pt  %% DEFINE EL ANCHO DE LA PRIMER LÍNEA
+        \vspace{.1cm}    %% DEFINE EL ESPACIO ENTRE LAS DOS LINEAS
+        \hrule height1pt  %% DEFINE EL ANCHO DE LA SEGUNDA LINEA (NORMALMENTE ES MAS DELGADA)
+        \vspace{.4cm}   %% DEFINE EL ESPACIO ENTRE LA DOBLE LINEA Y EL NOMBRE DE LA DIVISIÓN
+        {\scshape \LARGE Divisi\'on Acad\'emica de Mecatr\'onica}  %% NOMBRE DE LA DIVISIÓN
+    \end{center}
+\end{minipage}
+%}
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%% MINIPAGE PARA EL LOGO DEL LADO DERECHO (DIVISIÓN ACADÉMICA)
+%
+%
+%
+%
+%\fbox{
+%}
+%
+%
+%
+%
+%
+%    ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%%%%%%% RENGLÓN DE ABAJO DEJADO INTENCIONALMENTE EN BLANCO PARA GENERAR NUEVO COMIENZO DE PÁRRAFO  %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%
+%  ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%% 5TO MINIPAGE PARA EL CUERPO DE LA PORTADA (NOMBRES, TÍTULO, ETC.) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[l][0.78\textheight][t]{0.1\textwidth}
+    \begin{center}
+    \hskip0pt
+    \vrule width2.5pt height17cm    %% height definde la altura de la linea gruesa
+        \hskip1mm
+        \vrule width1pt height17cm  %% height define la altura de la linea delgada
+        \end{center}
+\end{minipage}
+%}
+%\fbox{
+\begin{minipage}[c][0.78\textheight][t]{0.8\textwidth}
+      \begin{center}
+      \vspace{2cm}
+        {\Large \scshape {Robot Catersiano}}
+
+        \vspace{2cm}
+
+        \makebox[5cm][c]{\LARGE Proyecto}  \\[20pt]
+        Que para obtener el título de:\\[5pt]
+        {\Large \textbf{{Ingeniero en Mecatronica}}}\\[40pt]
+        PRESENTA:\\[12pt]
+        \textbf{ \Large {Alcala Villagom\'e Mario.\\
+        				Becerra I\~niguez Diego Armando.\\
+        				Martinez Velazquez Lisbeth.\\
+        				Murgu\'ia Ch\'avez Nadia Sarahi.\\
+        				Ramos Ch\'avez Brayan Oswaldo.}}
+
+        \vspace{2cm}
+
+        { \small Directores}:\\ {Ing. Moran Grabito Carlos Enrique}
+
+        \vspace{2.5cm}
+
+        { Tlajomulco de Zuñiga, Jalisco} \hskip2.5cm {Septiembre de 2019}
+      \end{center}
+\end{minipage}
+%}
+
+\maketitle
+
+\section{Problematica}
+
+En las empresas que se dedican a la elaboraci\'on de tortillas de harina de trigo se tiene el uso de una plancha en la cual se incopora una parte movil para que que presione y cliente la tortilla. En la cual se pueden colocar dos bolas de masa para que sea mas rapido la elebaraci\'on del producto.
+
+La realizaci\'on de la tortilla se lleva acabo or dos personas dentro del \'area de la plancha, la primera es la persona que corta y separa la masa en porciones ya sea en esferas o cuadros, la segunda pone las porciones en la plachan para hacer la tortilla.  
+\subsection{Objetivo General}
+
+Elaboraci\'on de un robot cartesiana para la implementaci\'on dentro del \'area de realizacion de tortilla de trigo\\
+
+\subsubsection{Objetivos del proyecto}
+
+$\diamond$ Modelaci\'on matematica de un sistema robotizado.
+
+$\diamond$ Diseño y simulaci\'on de mecanismos.
+
+$\diamond$ Administraci\'on y control de recursos economicos y humanos.
+
+$\diamond$ Selecci\'on y elecci\'on de sensores y actuadores.
+
+\subsection{Justificaci\'on}
+
+La implementaci\'on de del robot cartesiano dentro del \'area de la elaboraci\'on de tortillas sea visto de manera concreta ya que puede ocupar el puesto del personal extra que realiza la colocaci\'on de las porciones de masa.
+
+De esta el trabajo seria continuo, rapido y tomando el punto de vista del empleador de este tipo de negocios puede ahorrarse un salirio e invertirlo en otros departamentos que su negocio necesite ingreso de capital.
+
+\subsection{Delimitaci\'on}
+
+Dentro de la implementaci\'on del robot en una \'area que cuenta con fondos de inrversi\'on limitados, de igual manera es una manera de negocio nueva en el mercado, por lo cual se tiene que buscar los recursos y materiales para que el robot sea economico, manejable y cuente con un sistema flexible, ya que muchos de estos negocios apenas estan en crecimiento y cuenta con lugares de trabajo limitados y poco espaciosos.
+
+\section{Cronograma de actividades}
+
+\subsection{Matriz de posibles materiales y costos}
+
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+	\textbf{Materiales} & \textbf{costo}\\
+\hline
+	Servo motores & 5,000\\
+\hline
+	Drivers & 4,500\\
+\hline
+	Aluminio & 7,000\\
+\hline
+	Cables & 200\\
+\hline
+	Motor de cremallera & 1,000\\
+\hline
+	Total & 17,700\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Matriz de roles}
+
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+	\textbf{Signo} & \textbf{Leyenda}\\
+\hline
+	P & Responsabilidad\\
+\hline
+	C & Colabora\\
+\hline
+	I & Suministra informaci\'on a los dem\'as\\
+\hline
+	MN & Mario Alcala Villagom\'ez y Nadia Sarahi Murgu\'ia Ch\'avez\\
+\hline
+	DB & Diego Armando Becerra Iñiguez y Brayan Oswaldo Ramos Ch\'avez\\
+\hline
+	LN & Lisbeth Martinez Velazquez y Nadia Sarahi Murgu\'ia Ch\'avez\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Diagrama Gantt}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+	\textbf{Actividades} & \textbf{MN} & \textbf{DB} & \textbf{LN} & \textbf{Fecha}\\
+\hline
+	Titulo del proyecto & P & C & I & 16 al 20 septiembre\\
+\hline
+	Planteamiento del problema & I & P & C & 16 al 20 septiembre\\
+\hline
+	Formular el Problema & I & C & P & 16 al 20 septiembre\\
+\hline
+	Objetivo general del proyecto & P & I & C & 16 al 20 septiembre\\
+\hline
+	Objetivos del proyecto & P & C & I & 16 al 20 septiembre\\
+\hline
+	Justificaci\'on & C & C & P & 16 al 20 septiembre\\
+\hline
+	Delimitaci\'on & C & I & P & 16 al 20 septiembre\\
+\hline
+	Matriz de posibles costos materiales & P & C & I & 16 al 20 septiembre\\
+\hline
+	Matriz de roles & I & C & P & 16 al 20 septiembre\\
+\hline
+	Diagrama de Gantt & P & I & C & 16 al 20 septiembre\\
+\hline
+	Explicaci\'on de la aportaci\'on de cada materia & C & P & I & 16 al 20 septiembre\\
+\hline
+	Desarroyollo del proyecto & P & C & IP & -\\
+\hline
+	Bibliograf\'ia & PI & CI & IP & -\\
+\hline
+	Total P & 7 & 2 & 6 & -\\
+\hline
+	Total C & 3 & 8 & 3 & -\\
+\hline
+	Total I & 4 & 4 & 6 & -\\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\section{Relaci\'on de materias}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+	\textbf{Materias de 7to} & \textbf{Detalles de la Aportanci\'on al proyecto}\\
+\hline
+	\textbf{Ingles VII} & Comprenci\'on y Ttraduccion de articulos, libros\\
+	& y manuales consultados.\\
+\hline
+	\textbf{Termodinamica} & Analisis de temperatura en el sistema robotico\\
+\hline	
+	\textbf{Modelado de sistemas} & Modelado matematico para el anilisis\\
+	& cinematico del robot, mediante calculos\\
+\hline
+	\textbf{Administraci\'on y de proyectos} & Gesti\'on y organizacion, planeaciones\\
+	& y control de recursos economicos, materiales\\
+	& y humanos.\\
+\hline
+	\textbf{Cinematica de robots} & Calculo y especificaciones matematicas\\
+	& para la correcta estuturaci\'on del robot\\
+\hline
+\textbf{Dise\~no} & Dise\~no y simulaci\'on de la estructura del robot\\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
