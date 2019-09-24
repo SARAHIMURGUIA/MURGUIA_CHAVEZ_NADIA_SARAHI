@@ -1,0 +1,288 @@
+\documentclass[letter,openright,12pt,spanish]{report}
+%Gummi|065|=)
+\title{\textbf{Descripci\'on de la conveci\'on de Denavit-Hartenberg}}
+\author{Cinematica de Robots\\
+		Nadia Sarahi Murgu\'ia Ch\'avez\\
+		Ing. Mecatr\'onica 7A}
+\date{}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+
+\maketitle
+
+\section{Convenci\'on de Denavit-Hartenberg}
+
+En el estudio de la rob\'otica, exite un algoritmo, llamado algoritmo de Denavit-Hartenberg, que nos ayuda a establecer los sitemas de referencia para cada uno de los eslabones con los que cuenta el robot.\\
+Se trata de un procedimiento sistem\'atico para describir la estructura cinem\'atica de una cadena articulada constituida por articulaciones con un solo grado de libertad.\\
+Para ello, a cada articulaci\'on se le asigna un \textbf{Sistema de Referencia Local} con origen en un punto \textbf{Q} y ejes ortonormales \textbf{[X, Y, Z]}, comenzando con un primer SR (Sistema de Referencia) fijo e inmovil dado por los ejes:
+
+\begin{displaymath}
+[\textbf{X}_0, \textbf{Y}_0, \textbf{Z}_0]
+\end{displaymath} 
+Anclado a un punto fijo \textbf{Q} de la \textbf{Base} sobre la que est\'a montada toda la estructura de la cadena.\\
+Este sistema de refrencia no tiene por que ser el UNiversal con origen en \textbf{(0, 0, 0)} y la base can\'onica.
+
+\subsection{Asignaci\'on de Sistemas de Referencia}
+
+Las articulaciones se numeran desde \textbf{1} hasta \textbf{n}. A la articulacion \textbf{i}-\'esima se le asocia su propuo eje de rotaci\'on con eje:
+
+\begin{displaymath}
+\textbf{Z}_i-1
+\end{displaymath}
+
+De forma que el eje de giro de la 1ra articulaci\'on es:
+
+\begin{displaymath}
+\textbf{Z}_0
+\end{displaymath}
+
+y en la la \textbf{n}- \'esima articulaci\'on:
+
+\begin{displaymath}
+\textbf{Z}_n-1
+\end{displaymath}
+En la figura 1 se muestra la estructura del robot PUMA junto con sus articulaciones y ejes de rotaci\'on.
+Para la articulaci\'on \textbf{i}-\'esima (que es la que gira alrededor de \textbf{Z}), la elecci\'on del origen de coordenadas \textbf{Q} y del eje \textbf{X} sigue reglas muy precisas en funci\'on de la geometr\'ia de los brazos articulados. El eje \textbf{Y} por su parte, se escoge para que el sistema{\textbf{X, Y, Z}} se dextr\'ogiro\footnote{}. La especificaci\'on de cada eje \textbf{X} depende de la relaci\'on espacial entre \textbf{Z} y \ textbf{Z}, dsitingui\'endose 2 cosaso:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/robot.png}
+\caption{Robot PUMA}
+\label{Figura 1.}
+\end{figure}
+
+\subsubsection{Z y Z no son paralelos}
+
+Entonces existe una \'unica recta perpendicular a ambos, cuya intersecci\'on con los ejes proporciona su m\'inima distancia (que puede ser 0). Esta distancia, \textbf{a}, medida desde el eje \textbf{Z} hacia el eje \textbf{Z} (con su signo), es uno de los par\'ametros asociados a la articulaci\'on \textbf{i}-\'esima. 
+La distancia \textbf{d} desde \textbf{Q} a la intersecci\'on de la perpendicular com\'un entre \textbf{Q} a la intersecci\'on de la perpedicular com\'un entre \textbf{Z} y \textbf{Z} con \textbf{Z} es el 2do de los par\'ametros.
+En la figura 2, podemos denotar que el eje \textbf{X} es una recta, siendo el sentido positivo el que va desde el eje \textbf{Z} al \textbf{Z} si \textbf{a>0}.
+El origen de coordenadas \textbf{Q} es la intesecci\'on de dicha recta con ele \textbf{Z}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/plano.png}
+\caption{Planos}
+\label{Figura 2.}
+\end{figure}
+
+\subsubsection{Z y z son paralelos}
+
+En esta situaci\'on el eje \textbf{X} se toma en el plano conteniendo a \textbf{Z} y \textbf{Z} y perpendicular a ambos. 
+El origen \textbf{Q} es cualquiera punto conveniente del eje \textbf{Z}. 
+El par\'ametro \textbf{a} es, como antes, la distancia perpendicular entre los ejes \textbf{Z} y \textbf{Z} y \textbf{d} es la distancia desde \textbf{Q}.
+Una vez determinado el eje \textbf{X}, a la articulaci\'on \textbf{i}-\'esima se le asocia un 3er par\'ametro fijo \textbf{a} que es el \'angulo que forman los ejes \textbf{Z} y \textbf{Z} en relaci\'onal eje \textbf{X}.\\
+N\'otese en la figura 3, que cuando el brazo \textbf{i}-\'esimo (que une rigidamente las articulaciones \textbf{i} e \textbf{i+1}) gira en torno al eje \textbf{Z} (que es el de rotaci\'on de la articulaci\'on \textbf{i}), los par\'ametros \textbf{a}, \textbf{d} y \textbf{a} permamnecen cosntantes, pues depende exclusivamente de las posiciones/orientaciones relativas entre los ejes \textbf{Z} y \textbf{Z}, que son invariables. Por tanto, \textbf{a}, \textbf{d} y \textbf{a} pueden calcularse a partir de cualquier configuraci\'on de la esturctura articulada, en particular a partir de una configuraci\'on inicial est\'andar. Precisamente el \'angulo $\theta$, de giro que forman los ejes \textbf{X} y \textbf{X} con respecto al eje \textbf{Z} es el 4to par\'ametro asociado a la articulaci\'on \textbf{i} y el unico de ellos que varia cuando el brazo \textbf{i} gira.
+Es importente observar que le conjunto de los 4 par\'ametros \textbf{a}, \textbf{d}, \textbf{a} y \textbf{$\theta$} determina totalmente el Sistema de Referencia de la articulaci\'on \textbf{i+1} en funci \'on del S.R de la articulaci\'on \textbf{i}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/coordenadas.png}
+\caption{Coordenadas}
+\label{Figura 3.}
+\end{figure}
+
+\section{Transformaci\'on de coordenadas}
+
+De los 4 par\'ametros aosciados a una articulaci\'on, los 3 primeros son constantes y depende exclusivamente de la relaci\'on geometr\\iaca entre las articulaciones \textbf{i} e \textbf{i+1}, mientras que el 4to par\'ametro $\theta$ es la \'unica variable de la articulaci\'on, siendo el \'angulo de giro del eje \textbf{X} alrededor del eje \textbf{Z} para llevarlo hasta \textbf{X}. 
+Sabemos que dados 2 Sistemas de Referencia 
+
+\begin{displaymath}
+\textbf{R}_1\textbf{= Q}_1 \textbf{,[u}_1\textbf{,u}_2\textbf{,u}_3\textbf{]}\\
+\end{displaymath}
+
+\begin{displaymath}
+\textbf{R}_2\textbf{=Q}_2\textbf{.[v}_1\textbf{,v}_2\textbf{,v}_3\textbf{]}\\
+\end{displaymath}
+con bases ortonormales asociadas, el cambio de coordenadas del segundo S.R al primero viene dado por:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.50]{/home/sarha13/Escritorio/ecuacion1.png}
+\caption{matriz}
+\label{Figura 4.}
+\end{figure}
+donde:
+
+\begin{displaymath}
+\beta_1, \beta_2, \beta_3
+\end{displaymath}
+son las coordenadas de un punto en el S.R \textbf{\begin{displaymath}R_2, R\end{displaymath}}
+es la matriz del Cmabio de Base tal que:
+
+\begin{displaymath}
+\textbf{[v}_1|\textbf{v}_2|\textbf{v}_3\textbf{]} = \textbf{[u}_1|\textbf{u}_2|\textbf{u}_3\textbf{]}\cdot\textbf{R}\\
+\end{displaymath}
+
+\begin{displaymath} 
+\textbf{$\lambda$}_1,\textbf{$\lambda$}_2, \textbf{$\lambda$}_3
+\end{displaymath}
+son las coordenadas del origen del segundo S.R., \textbf{Q} respecto al primero. La expresi\'on permite entonces obtener las coordenadas:
+
+\begin{displaymath}
+\textbf{a}_1, \textbf{a}_2, \textbf{a}_3
+\end{displaymath}
+
+del punto en cuesti\'on con respecto al primero de los S.R.
+En nuestro caso, para pasar de la \textbf{(i+1)}-\'esima articulaci\'on a la \textbf{i}-\'esima, los Sistemas de Referencia son:
+
+\begin{displaymath}
+\textbf{R}_1={\textbf{Q}_i-1,\textbf{[X}_i-1, \textbf{Y}_i-1, \textbf{Z}_i-1 \textbf{]}}
+\end{displaymath}
+\begin{displaymath}
+\textbf{R}_2={\textbf{Q}_i,\textbf{[X}_i,\textbf{Y}_i.\textbf{Z}_1\textbf{]}}
+\end{displaymath}
+Estudiaremos por separado la matriz del Cambio de Base y la expresi\'on de \textbf{Q} en el pierm S.R.
+
+\subsection{Matriz del Cambio de Base}
+
+Haciendo asignado los ejes a cada articulaci\'on mediante la representaci\'on Denavit-Hartenberg, tenemos que:
+
+1- El eje \textbf{X} se obtiene rotando eleje \textbf{X} alrededor del eje \textbf{Z} un \'angulo $\theta$.
+
+2-El eje \textbf{Z} se obtiene rotando el eje \textbf{Z} añrededor del eje \textbf{X} un \'angulo \textbf{$\alpha$}.
+
+Por su parte, el eje \textbf{Y} viene ya determinado por \textbf{X} y \textbf{Z}.
+
+La primera transformaci\'on es una rotaci\'on alredeor del 3er vector de la 1ra Base, cuyas ecuaciones gen\'ericas son:
+
+\begin{displaymath}
+[u_1^{(1)}|u_2^{(1)}|u_3^{(1)}=[u_1|u_2|u_3]R_3(\theta_1)
+\end{displaymath}
+
+La segunda transofmraci\'on es una rotaci\'on alrededor del 1er vector de la base ya transformada y tiene por expresi\'on:
+
+\begin{displaymath}
+[u_1^{(2)}|u_2^{(2)}|u_3^{(2)}]=[u_1^{(1)}|u_2^{(1)}|u_3^{(1)}]R_1(\alpha_i)
+\end{displaymath}
+Por tanto, concaten\'andolas:
+
+\begin{displaymath}
+[u_1^{(2)}|u_2^{(2)}|u_3^{(2)}]=[u_1|u_2|u_3]R_3(\theta_i)R_1(\alpha_i)
+\end{displaymath}
+Finalmente, cambiamos la notaci\'on para tener:
+
+\begin{displaymath}
+[X_i|Y_i|Z_i]=[X_{i-1}|Y_{i-1}|Z_{i-1}]R_3(\theta_i)R_1(\alpha_i)
+\end{displaymath}
+Con lo cual, la matriz del cambio de base es:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuaicon6.png}
+\caption{Matriz 2}
+\label{}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/matriz.png}
+\caption{Matriz 2.1}
+\label{}
+\end{figure}
+
+
+\subsubsection{Coordenadas de Q en el primer S.R}
+
+Seg\'un la representaci\'on de Denavit-Hartenberg el origen del 2do Sistema de Referencia se obtiene mediante:
+
+1- Traslaci\'on de \textbf{Q} a lo largo del eje \textbf{Z} por la magnitud \textbf{d}.
+
+2- Traslaci\'on a lo largo del eje \textbf{X} por la magnitud \textbf{$\alpha$}
+
+La pirmera transformaci\'on es:
+
+\begin{displaymath}
+Q_{i-1}^{(1)}=Q_{i-1}+d_iZ_{i-1}
+\end{displaymath}
+
+La segunda transformacii\'on es:\\
+
+\begin{displaymath}
+Q_i=Q_{i-1}^{(1)}+\alpha_iX_i
+\end{displaymath}
+
+
+Teniendo ahora en cuenta que:\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuacion2.png}
+\caption{}
+\label{}
+\end{figure}
+
+Se tiene el 1er vector como:\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuacion3.png}
+\caption{}
+\label{}
+\end{figure}
+
+de donde:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuacion4.png}
+\caption{}
+\label{}
+\end{figure}
+
+\begin{displaymath}
+Q_i=Q_{i-1}^{(1)}+\alpha_iX_i=Q_{i-1}+d_iZ{i-1}+\alpha_i(cos\theta_i\cdot X_{i-1}+sen\theta_1\cdot Y_{i-1})
+\end{displaymath}
+
+\begin{displaymath}
+Q_i=Q_{i-1}+(\alpha_icos\theta_i)X_{i-1}+(\alpha_isen\theta_i)Y_{i-1}+d_iZ_{i-1}
+\end{displaymath}
+
+y por tanto, las coordenadas de ,\textbf{Q} es el 1er Sistema de Referencia son:\\\\\\\\\\\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/matriz3.png}
+\caption{}
+\label{}
+\end{figure}
+
+
+Finalmente, la transformaci\'on de coordenadas del S.R. \textbf{Q, [X, Y, Z]} al S.R. \textbf{Q, [X, Y, Z]} es:\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuacion4.png}
+\caption{}
+\label{}
+\end{figure}
+
+Cambiando la notaci\'on para las coordenadas:\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/ecuacion5.png}
+\caption{}
+\label{}
+\end{figure}
+
+Donde el subindice denota el Sistema de Referencia respecto al cual est\'an expresadas las coordenadas.\\\\
+
+\newpage
+
+En coordenadas homog\'eneas:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/matriz2.png}
+\caption{}
+\label{}
+\end{figure}
+\newpage
+
+\begin{thebibliography}{X}
+\bibitem{Barrientos} \textbf{Barrientos A.;}  \textbf{Peñin L. F.;} \textbf{Balaguer C.$\&$ Aracil R.} \textsc{Fundamentos de Robotica} 2° Ed. McGraw-Hill, 2007
+
+\bibitem{FU} \textbf{FU, K. S.; G\'onzalez, R. C. $\&$ Lee, C. S. G.} \textsc{Robotica: control, deteccion, vision e inteligencia} mcgraw-hill, 1998
+\end{thebibliography}
+\end{document}

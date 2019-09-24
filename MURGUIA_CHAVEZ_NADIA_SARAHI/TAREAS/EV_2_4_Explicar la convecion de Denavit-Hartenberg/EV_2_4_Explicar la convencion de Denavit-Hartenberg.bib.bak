@@ -1,0 +1,18 @@
+% Encoding: UTF-8
+
+@Book{,
+  title     = {Fundamentos de Robotica},
+  publisher = {McGraw-Hill},
+  year      = {2007},
+  author    = {Barrientos A.; Pein L. F.; Balaguer C \& Aracil R.},
+  editor    = {2da},
+}
+
+@Book{,
+  title     = {Robotica: Control, Deteccion, Vision e inteligencia.},
+  publisher = {McGraw-Hill},
+  year      = {1998},
+  author    = {Fu, K. S.; Gonzalez R. C. \& Lee C. S. G.},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
