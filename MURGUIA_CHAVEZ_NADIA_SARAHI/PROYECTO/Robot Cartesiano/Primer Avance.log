@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.17)  20 SEP 2019 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.17)  18 OCT 2019 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,8 +238,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 51.
 Missing character: There is no Ã in font cmr12!
-Missing character: There is no ­ in font cmr12!
-Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
 
 [1
@@ -247,51 +245,118 @@ Missing character: There is no ± in font cmr12!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/sarha13/Escritorio/u
 pzmg.jpeg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 179.
+(Font)              <14.4> on input line 178.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 179.
+(Font)              <7> on input line 178.
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
-[1]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
-
-Overfull \hbox (29.10117pt too wide) in paragraph at lines 259--296
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+[1]
+Overfull \hbox (29.10117pt too wide) in paragraph at lines 255--292
  [] 
  []
 
 [2]
-Overfull \hbox (21.5604pt too wide) in paragraph at lines 303--325
+Overfull \hbox (21.5604pt too wide) in paragraph at lines 299--321
  [] 
  []
 
-[3] (./Primer Avance.aux
+[3]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no ± in font cmbx12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+ []
+
+</home/sarha13/Escritorio/Boceto.jpeg, id=25, 1043.9pt x 782.925pt>
+File: /home/sarha13/Escritorio/Boceto.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/Boceto.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/Boceto.jpeg  used on input li
+ne 331.
+(pdftex.def)             Requested size: 227.62204pt x 170.71489pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+</home/sarha13/Escritorio/barravertical.jpeg, id=26, 1284.8pt x 721.69624pt>
+File: /home/sarha13/Escritorio/barravertical.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/barravertical.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/barravertical.jpeg  used on i
+nput line 340.
+(pdftex.def)             Requested size: 227.62204pt x 127.85146pt.
+</home/sarha13/Escritorio/barrahorizontal.jpeg, id=27, 1284.8pt x 721.69624pt>
+File: /home/sarha13/Escritorio/barrahorizontal.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/barrahorizontal.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/barrahorizontal.jpeg  used on
+ input line 347.
+(pdftex.def)             Requested size: 227.62204pt x 127.85146pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+</home/sarha13/Escritorio/motorneva.jpeg, id=28, 1284.8pt x 721.69624pt>
+File: /home/sarha13/Escritorio/motorneva.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/motorneva.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/motorneva.jpeg  used on input
+ line 356.
+(pdftex.def)             Requested size: 227.62204pt x 127.85146pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--367
+
+ []
+
+[4 </home/sarha13/Escritorio/Boceto.jpeg> </home/sarha13/Escritorio/barravertic
+al.jpeg>] [5 </home/sarha13/Escritorio/barrahorizontal.jpeg> </home/sarha13/Esc
+ritorio/motorneva.jpeg>] (./Primer Avance.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) ) 
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3099 strings out of 492982
- 41781 string characters out of 6134896
- 120497 words of memory out of 5000000
- 6624 multiletter control sequences out of 15000+600000
+ 3123 strings out of 492982
+ 42600 string characters out of 6134896
+ 118497 words of memory out of 5000000
+ 6644 multiletter control sequences out of 15000+600000
  10619 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,35p,451b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Primer Avance.pdf" (5 pages, 93261 bytes).
+ 41i,9n,35p,384b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb>
+Output written on "Primer Avance.pdf" (7 pages, 638778 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
