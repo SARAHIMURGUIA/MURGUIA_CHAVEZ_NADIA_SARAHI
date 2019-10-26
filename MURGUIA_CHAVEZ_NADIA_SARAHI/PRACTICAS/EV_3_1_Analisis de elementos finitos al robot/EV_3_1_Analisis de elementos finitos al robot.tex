@@ -1,0 +1,88 @@
+\documentclass[letter,openright,12pt,spanish]{report}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%Gummi|065|=)
+\title{\textbf{Analisis de elementos finitos.}}
+\author{Cinematica de Robots\\
+		Alcala Villagomez Mario\\
+		Becerra Iñiguez Diego Aramando\\
+		Martinez Velazquez Lisbeth\\
+		Murgu\'ia Ch\'avez Nadia Sarahi\\
+		Ramos Ch\'avez Brian Oswaldo\\
+		Ing. Mecatr\'onica 7to A}
+\date{24 de octubre de 2019}
+\usepackage{graphicx}
+\begin{document}
+
+\maketitle
+
+\section{Analisis de Elementos Finitos}
+
+\subsection{Objetivos:}
+
+$\star$ Conocer los fundamentos te\'oricos del m\'etodo conocido como "an\'alisis de elemento finito", as\'i como su implementaci\'on pr\'actica en un software para resolver problemas de ingenier\'ia.\\
+$\star$ Comprender la fomulaci\'on de elemento finito para el an\'alisis de problemas f\'isicos en ingenier\'ia.\\
+$\star$ Introducirse en la teor\'ia y uso simulaciones num\'ericas para situaciones de carga mec\'anica complejas que ocurren en estructuras de uso pr\'actico.\\
+$\star$ Aprender las estrateg\'ias de an\'alisisde elemento finito y su implemnetaci\'on en un sotfware.\\
+$\star$ Conocer las capacidades y limitaciones de la teor\'ia de elemento finito.
+
+\subsection{Materiales}
+
+$\star$ Modelos 3D  de Robot.\\
+$\star$ Software de simulaci\'on Inventor.\\
+$\star$ Especificaciones de 3 materiales (minimo)\\
+$\star$ Puntos criticos del Robot.\\
+$\star$ Fuerzas Ejercidas en los puntos criticos.
+
+\section{Marco Teorico}
+
+El an\'alisis de elementos finitos (FEA) es un m\'etodo computarizado para predecir c\'omo reaccionará un producto ante las fuerzas, la vibraci\'n, el calor, el flujo de fluidos y otros efectos f\'isicos del mundo real. El análisis de elementos finitos muestra si un producto se romper\'a, desgastar\'a o funcionar\'a como se espera. Se denomina an\'alisis, pero en el proceso de desarrollo de productos, se utiliza para predecir qué ocurrir\'a cuando se utilice un producto.\\
+FEA descompone un objeto real en un gran número (entre miles y cientos de miles) de elementos finitos, como pequeños cubos. Las ecuaciones matemáticas permiten predecir el comportamiento de cada elemento. Luego, una computadora suma todos los comportamientos individuales para predecir el comportamiento real del objeto.\\
+El an\'alisis de elementos finitos predice el comportamiento de los productos afectados por una variedad de efectos f\'isicos, entre los que se incluyen:\\
+
+$\star$ Esfuerzo mecanico.\\
+
+$\star$ Vibraci\'on mec\'anica\\
+
+$\star$ Movimiento\\
+
+$\star$ Transferencia de calor\\
+
+$\star$ Flujo de fluidos.\\
+
+$\star$ Electrost\'atica\\
+
+$\star$ Modelado por inyeccion de platico.
+
+\section{Desarrollo}
+
+Para la realizaci\'on de esta practica utilizaremos el software de AUTODESK Inventor el cual nos permitira realizar el siguente analisis en un Robot Caterciano (DISMEDIC). Utilizando 3 materiales distintos en la fabricaci\'on de algunas piezas. Delos cuales an\'alisaremos los siguientes puntos: \ref{Figura 1}\\
+
+$\star$ Fuerza.\\
+
+$\star$ Tensi\'o.\\
+
+$\star$ Presi\'on.\\
+
+$\star$ Desgaste de rodamientos.\\
+
+$\star$ Fracturas.\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/DISMEDIC.png}
+\caption{DISMEDIC}
+\label{Figura 1}
+\end{figure}
+
+En inventor utilizaremos la ocpion "Entorno" y en "Iniciar simulacion" y hay seleccionaremos los puntos que queremos analizar, tomando en cuenta que deben de ser la fuerza que se ejercera en la articulaci\'on o ensamble del robot. En este caso haremos el analisis de tres materiales con los que fabricaremos el robot.\\
+
+Materiales: \\
+
+$\star$ Acero Inoxidable ASIS 440C\\
+
+$\star$ Madera (Roble)\\
+
+$\star$ Aluminio 6061\\
+
+\end{document}
