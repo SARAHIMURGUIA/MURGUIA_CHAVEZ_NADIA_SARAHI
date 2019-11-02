@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.17)  25 OCT 2019 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.17)  2 NOV 2019 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -120,7 +120,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 LaTeX Warning: Unused global option(s):
     [letter,spanish].
 
-No file "EV_3_1_Analisis de elementos finitos al robot".aux.
+(./EV_3_1_Analisis de elementos finitos al robot.aux)
 \openout1 = `"EV_3_1_Analisis de elementos finitos al robot.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -135,6 +135,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
@@ -267,9 +268,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 
-LaTeX Warning: Reference `Figura 1' on page 2 undefined on input line 59.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
@@ -325,36 +323,419 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
+[3 </home/sarha13/Escritorio/DISMEDIC.png>]
+</home/sarha13/Escritorio/Figura_1.jpeg, id=21, 705.63625pt x 613.29124pt>
+File: /home/sarha13/Escritorio/Figura_1.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/Figura_1.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/Figura_1.jpeg  used on input 
+line 99.
+(pdftex.def)             Requested size: 227.62204pt x 197.82935pt.
+ [4 </home/sarha13/Escritorio/Figura_1.jpeg>]
+</home/sarha13/Escritorio/figura_2.jpeg, id=25, 329.23pt x 91.34125pt>
+File: /home/sarha13/Escritorio/figura_2.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_2.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_2.jpeg  used on input 
+line 108.
+(pdftex.def)             Requested size: 256.0748pt x 71.04657pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
-[3 </home/sarha13/Escritorio/DISMEDIC.png>]
-(./EV_3_1_Analisis de elementos finitos al robot.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
+ []
+
+</home/sarha13/Escritorio/figura_3.jpeg, id=26, 338.26375pt x 91.34125pt>
+File: /home/sarha13/Escritorio/figura_3.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_3.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_3.jpeg  used on input 
+line 121.
+(pdftex.def)             Requested size: 227.62204pt x 61.46591pt.
+[5 </home/sarha13/Escritorio/figura_2.jpeg> </home/sarha13/Escritorio/figura_3.
+jpeg>]
+</home/sarha13/Escritorio/figura_4.jpeg, id=30, 653.44125pt x 202.7575pt>
+File: /home/sarha13/Escritorio/figura_4.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_4.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_4.jpeg  used on input 
+line 135.
+(pdftex.def)             Requested size: 256.0748pt x 79.45564pt.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
+
+ []
+
+</home/sarha13/Escritorio/figura_5.jpeg, id=31, 550.055pt x 256.96pt>
+File: /home/sarha13/Escritorio/figura_5.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_5.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_5.jpeg  used on input 
+line 148.
+(pdftex.def)             Requested size: 227.62204pt x 106.3345pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+</home/sarha13/Escritorio/figura_6.jpeg, id=32, 377.41pt x 124.465pt>
+File: /home/sarha13/Escritorio/figura_6.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_6.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_6.jpeg  used on input 
+line 157.
+(pdftex.def)             Requested size: 227.62204pt x 75.067pt.
+[6 </home/sarha13/Escritorio/figura_4.jpeg>]
+</home/sarha13/Escritorio/figura_7.jpeg, id=37, 333.245pt x 50.1875pt>
+File: /home/sarha13/Escritorio/figura_7.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_7.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_7.jpeg  used on input 
+line 166.
+(pdftex.def)             Requested size: 227.62204pt x 34.28096pt.
+ [7 </home/sarha13/Escritorio/figura_5.jpeg> </home/sarha13/Escritorio/figura_6
+.jpeg> </home/sarha13/Escritorio/figura_7.jpeg>]
+</home/sarha13/Escritorio/figura_19.png, id=41, 311.66437pt x 402.00188pt>
+File: /home/sarha13/Escritorio/figura_19.png Graphic file (type png)
+<use /home/sarha13/Escritorio/figura_19.png>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_19.png  used on input 
+line 179.
+(pdftex.def)             Requested size: 284.52756pt x 367.00613pt.
+</home/sarha13/Escritorio/figura_20.png, id=42, 333.49594pt x 123.46124pt>
+File: /home/sarha13/Escritorio/figura_20.png Graphic file (type png)
+<use /home/sarha13/Escritorio/figura_20.png>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_20.png  used on input 
+line 188.
+(pdftex.def)             Requested size: 333.49512pt x 123.46092pt.
+ [8 </home/sarha13/Escritorio/figura_19.png>]
+</home/sarha13/Escritorio/figura_10.jpeg, id=46, 292.09125pt x 185.69376pt>
+File: /home/sarha13/Escritorio/figura_10.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_10.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_10.jpeg  used on input
+ line 197.
+(pdftex.def)             Requested size: 142.26378pt x 90.44388pt.
+</home/sarha13/Escritorio/figura_11.jpeg, id=47, 434.62375pt x 206.7725pt>
+File: /home/sarha13/Escritorio/figura_11.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_11.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_11.jpeg  used on input
+ line 204.
+(pdftex.def)             Requested size: 142.26378pt x 67.68298pt.
+</home/sarha13/Escritorio/figura_21.jpeg, id=48, 192.72pt x 190.7125pt>
+File: /home/sarha13/Escritorio/figura_21.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_21.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_21.jpeg  used on input
+ line 213.
+(pdftex.def)             Requested size: 170.71652pt x 168.93622pt.
+ [9 </home/sarha13/Escritorio/figura_20.png> </home/sarha13/Escritorio/figura_1
+0.jpeg> </home/sarha13/Escritorio/figura_11.jpeg>]
+</home/sarha13/Escritorio/figura_13.jpeg, id=52, 317.185pt x 186.6975pt>
+File: /home/sarha13/Escritorio/figura_13.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_13.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_13.jpeg  used on input
+ line 222.
+(pdftex.def)             Requested size: 227.62204pt x 133.98338pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+</home/sarha13/Escritorio/figura_14.jpeg, id=53, 516.93124pt x 199.74625pt>
+File: /home/sarha13/Escritorio/figura_14.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_14.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_14.jpeg  used on input
+ line 231.
+(pdftex.def)             Requested size: 284.52756pt x 109.9461pt.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+[10 </home/sarha13/Escritorio/figura_21.jpeg> </home/sarha13/Escritorio/figura_
+13.jpeg>]
+</home/sarha13/Escritorio/figura_16.jpeg, id=57, 776.9025pt x 573.14125pt>
+File: /home/sarha13/Escritorio/figura_16.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_16.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_16.jpeg  used on input
+ line 240.
+(pdftex.def)             Requested size: 227.62204pt x 167.9208pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+[11 </home/sarha13/Escritorio/figura_14.jpeg> </home/sarha13/Escritorio/figura_
+16.jpeg>]
+</home/sarha13/Escritorio/figura_17.jpeg, id=61, 771.88374pt x 578.16pt>
+File: /home/sarha13/Escritorio/figura_17.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_17.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_17.jpeg  used on input
+ line 249.
+(pdftex.def)             Requested size: 256.0748pt x 191.8079pt.
+</home/sarha13/Escritorio/figura_18.jpeg, id=62, 773.89125pt x 576.1525pt>
+File: /home/sarha13/Escritorio/figura_18.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_18.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_18.jpeg  used on input
+ line 258.
+(pdftex.def)             Requested size: 227.62204pt x 169.4624pt.
+ [12 </home/sarha13/Escritorio/figura_17.jpeg> </home/sarha13/Escritorio/figura
+_18.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+File: /home/sarha13/Escritorio/Figura_1.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/Figura_1.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/Figura_1.jpeg  used on input 
+line 276.
+(pdftex.def)             Requested size: 227.62204pt x 197.82935pt.
+[13]
+File: /home/sarha13/Escritorio/figura_2.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_2.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_2.jpeg  used on input 
+line 285.
+(pdftex.def)             Requested size: 256.0748pt x 71.04657pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+[14]
+File: /home/sarha13/Escritorio/figura_3.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_3.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_3.jpeg  used on input 
+line 298.
+(pdftex.def)             Requested size: 227.62204pt x 61.46591pt.
+File: /home/sarha13/Escritorio/figura_4.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_4.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_4.jpeg  used on input 
+line 314.
+(pdftex.def)             Requested size: 256.0748pt x 79.45564pt.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--324
+
+ []
+
+[15]
+File: /home/sarha13/Escritorio/figura_5.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_5.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_5.jpeg  used on input 
+line 327.
+(pdftex.def)             Requested size: 227.62204pt x 106.3345pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+File: /home/sarha13/Escritorio/figura_6.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_6.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_6.jpeg  used on input 
+line 336.
+(pdftex.def)             Requested size: 227.62204pt x 75.067pt.
+File: /home/sarha13/Escritorio/figura_7.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_7.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_7.jpeg  used on input 
+line 345.
+(pdftex.def)             Requested size: 227.62204pt x 34.28096pt.
+[16]
+</home/sarha13/Escritorio/figura_9.jpeg, id=79, 740.7675pt x 603.25375pt>
+File: /home/sarha13/Escritorio/figura_9.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_9.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_9.jpeg  used on input 
+line 356.
+(pdftex.def)             Requested size: 256.0748pt x 208.53699pt.
+</home/sarha13/Escritorio/figura_8.jpeg, id=80, 514.92375pt x 550.055pt>
+File: /home/sarha13/Escritorio/figura_8.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_8.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_8.jpeg  used on input 
+line 365.
+(pdftex.def)             Requested size: 284.52756pt x 303.94122pt.
+ [17 </home/sarha13/Escritorio/figura_9.jpeg>] [18 </home/sarha13/Escritorio/fi
+gura_8.jpeg>]
+File: /home/sarha13/Escritorio/figura_10.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_10.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_10.jpeg  used on input
+ line 374.
+(pdftex.def)             Requested size: 142.26378pt x 90.44388pt.
+File: /home/sarha13/Escritorio/figura_11.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_11.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_11.jpeg  used on input
+ line 381.
+(pdftex.def)             Requested size: 142.26378pt x 67.68298pt.
+File: /home/sarha13/Escritorio/figura_13.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_13.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_13.jpeg  used on input
+ line 390.
+(pdftex.def)             Requested size: 170.71652pt x 100.48753pt.
+File: /home/sarha13/Escritorio/figura_14.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_14.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_14.jpeg  used on input
+ line 399.
+(pdftex.def)             Requested size: 227.62204pt x 87.95567pt.
+ [19]
+</home/sarha13/Escritorio/figura_15.jpeg, id=91, 309.155pt x 261.97874pt>
+File: /home/sarha13/Escritorio/figura_15.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_15.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_15.jpeg  used on input
+ line 408.
+(pdftex.def)             Requested size: 170.71652pt x 144.66838pt.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+File: /home/sarha13/Escritorio/figura_16.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_16.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_16.jpeg  used on input
+ line 417.
+(pdftex.def)             Requested size: 227.62204pt x 167.9208pt.
+[20 </home/sarha13/Escritorio/figura_15.jpeg>]
+File: /home/sarha13/Escritorio/figura_17.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_17.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_17.jpeg  used on input
+ line 426.
+(pdftex.def)             Requested size: 284.52756pt x 213.11304pt.
+ [21]
+File: /home/sarha13/Escritorio/figura_18.jpeg Graphic file (type jpg)
+<use /home/sarha13/Escritorio/figura_18.jpeg>
+Package pdftex.def Info: /home/sarha13/Escritorio/figura_18.jpeg  used on input
+ line 435.
+(pdftex.def)             Requested size: 256.0748pt x 190.64081pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+[22] (./EV_3_1_Analisis de elementos finitos al robot.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2373 strings out of 492982
- 31503 string characters out of 6134896
- 89063 words of memory out of 5000000
- 5914 multiletter control sequences out of 15000+600000
- 12710 words of font info for 49 fonts, out of 8000000 for 9000
+ 2482 strings out of 492982
+ 35378 string characters out of 6134896
+ 89071 words of memory out of 5000000
+ 6000 multiletter control sequences out of 15000+600000
+ 12403 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,26p,544b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,26p,595b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "EV_3_1_Analisis de elementos finitos al robot.pdf" (4 pages,
- 78517 bytes).
+Output written on "EV_3_1_Analisis de elementos finitos al robot.pdf" (23 pages
+, 793978 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

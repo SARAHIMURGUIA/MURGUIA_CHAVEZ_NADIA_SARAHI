@@ -83,6 +83,363 @@ $\star$ Acero Inoxidable ASIS 440C\\
 
 $\star$ Madera (Roble)\\
 
-$\star$ Aluminio 6061\\
+$\star$ Aluminio 6061
+
+\section{Analisis de elementos finitos (Acero Inoxidable)}
+El analisis de elementos finitos es un metodo de aproximacion de problemas continuos, de tal forma que el continuo de divide en un numero finito de partes, "elementos" cuyo comportamiento se especifica mediante un numero finito de parametros asociados a ciertos puntos caracteristicos denominados "nodos". estos nodos son los puntos de union de cada elemento con adyacentes.\\
+La solucion del sistema completo sigue las reglas de los problemas discretos. El istema completo se forma por ensamblaje de los elementos. Las incognitas del problema dejan de ser funciones matematicas y pasan a ser el valor de estas funciones en los nodos.
+* El comportamiento en el interior de cada elemento queda definido a partir del coportamiento de los nodos mediante las adecuadas funciones de interpolacion o funciones de forma.
+
+\section{Aplicacion del metodo}
+La forma mas intuitiva de comprender el metodo, al tiempo que la mas extendida, es la aplicacion a una placa sometida a tension plana. MEF se puede entender desde un punto de vista esctructural, como una generalizacion del calculo matricial de estructuras al analisis de sistemas continuos. de hecho el metodo nacio por evolucion de aplicaciones a sistemas estructurales.\\
+*Un elemento finito e viene definido por sus nodos (i,j,m) y por su contorno por lineas que los unen. Los desplazamientos u de cualquier punto del elemento se aproximan por un vector.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/Figura_1.jpeg}
+\caption{}
+\label{Figura 2.}
+\end{figure}
+
+N son funciones de posicion dadas( funciones de forma y a es un vector formando por los dezplazamientos nodales de los elementos considerados. Para el caso de tension plana.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_2.jpeg}
+\caption{}
+\label{Figura 3.}
+\end{figure}
+
+u: son los movimientos horizontal y vertical en un punto cualquiera del elemento.\\
+a: son los dezplazamientos del nodo i.\\\\
+
+Las funciones Ni, Nj, Nm, han de escogerse de tal forma que al sustiuir en la figura de arriba las coordenadas nodales, se obtengan los dezplazmientos nodales.\\
+Conocidos los dezplazamientos de todos los puntos del elemento , se pueden determinar las deformaciones en cualquier punto, que vendran por una realcion del tipo siguente:
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_3.jpeg}
+\caption{}
+\label{Figura 4.}
+\end{figure}
+
+Esta expresion es valida con caracter general cualesquiera que sean las relaciones entre tensiones y deformaciones, si la tensiones siguen una ley lines como se puede rescribir la ecuacion en la forma siguente.
+\section{Criterio de la parcela}
+Es conveniente que las funciones tengan la propiedad de valer la unidad un los nodos a los que estan asociadas y que tengan un valor nulo en el resto. Este tipo de elementos se llaman elementos conformes y seguran la comunidad de la ley de corrimientos entre elementos.\\
+Los elementos no conformes son, por lo tanto, los que no aseguran la unidad de la ley de corrimientos, hecho que provoca la existencia de deformaciones infinitas en el contorno entre elementos.
+\section{Tipos de forma.}
+En cada elemento se puede distiguir tres tipos de nodos,primarios,secundarios e intermedios.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_4.jpeg}
+\caption{}
+\label{Figura 5.}
+\end{figure}
+
+Las funciones deforman agrupan en dos familias principales en funcion del tipo de nodos.\\
+*serendipidas:En las que solo existen nodos frontera(primario y secundarios).\\
+*Lagrangianas:Incluyen adémas nodos intermedios.\\
+con el fin de conseguir un mayor ajuste ala geometria del cuerpo, existe tambien una interpolacion de tipo geometrico esto permite obtener elementos de lados curvos apartir de un elemento de referencia.\\
+
+Esto implica introducir un cambio de variable de las ecuaciones integrales que describen el comportamiento de los elementos las derivadas de las funciones que intervienen de la expresion de B son respecto a x,y,z, qu guardan ls relaciones respecto alas coordenadas locales.\\\\\\\\\\\\
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_5.jpeg}
+\caption{}
+\label{Figura 6.}
+\end{figure}
+
+Donde J es de la matriz Jacabiana de la transformacion
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_6.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Los diferenciales de volumen en cada sistema de coordenadas vienen relacionados de la forma.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_7.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Una vez realizada la transformacion,la integracion es mas sencilla en el sistema de coordenadas local que en el catersiano(x,y,z,) en el que los dominios estan distorcionados. pero la obtencion del resultado final puede presentar ciertos problemas.
+
+\newpage
+
+\section{Imagenes del Anlisis de elementos finitos del robot cartesiano}
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=10cm]{/home/sarha13/Escritorio/figura_19.png}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La imagen muesta acerca el nombre del materia en que se hizo el analisis en este caso fue el alumino, que te aroja su densidad,tension y su nombre de la pieza en el que las piezas son de ese material elaborado, tanto el coeficiente de poisson y entre otros que nos sirven para determinar el material en el que se esta trabajando.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/figura_20.png}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En esta parte del cuadrante arroja inventor una tabla de datos de otras piezas de diferente Material que de igual manera arroja su tabla de datos como la otra tabla anterior que se mostraba en el acero inoxidable.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=5cm]{/home/sarha13/Escritorio/figura_10.jpeg}
+\caption{}
+\label{Figura 11.}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=5cm]{/home/sarha13/Escritorio/figura_11.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Tambien el analisis de elementos finitos lanza una tabla con datos de propiedades fisicas para determinar el peso el area que tendra el robot como se comporta la gravedad en los 3 ejes del mismo. el numero de nodos que es importante para el analisis matricial que se le puede hacer mas adelante en las futuras practicas y si con lleva una precision del elemento.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=6cm]{/home/sarha13/Escritorio/figura_21.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La fuerzas que nos arroja es para la interpretacion en el estado fisico para tener un idea de como se comportara cuando lo tengamos armado si soportaria mas peso de lo que se pudiera en los distintos ejes tanto en (x,y,x).
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_13.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La carga de rodamiento es un dato que nos arroja porque es importante para el soporte de los motores nema17 ya que van ajustados precisamente alas bandas que le dan el desplazamiento al eje z para que pues moverse en los 3 ejes del sistema del robot.\\\\\\
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=10cm]{/home/sarha13/Escritorio/figura_14.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En los datos de la configuracion de la malla nos habla sobre la interpretacion del tamaño de cada elemento por fraccion y el factor de modificacion y el angulo maximo de giro de los rodamientos del robot y como opciones usar la medida basda en la pieza del ensamblaje.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_16.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En los datos de los resultados nos arroja como valores de frecuencia como lo marca y fue calculado de 11.83Hz y el resumen de los resultados de voumen y masa en total del robot que nos ayuda a interpretar su masa y podriamos calcular para saber su peso tambien ya que son los ultimos resultados que nos arrojan los elementos finitos del robot.\\\\\\\\\\
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_17.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En el dezplazamiento con una masa que recorre los 3 ejes del robot cartesiano se debe a que nos mostraria un calor o esfuerzo o deformacion demas si el robot no soportara el peso en toda su totalidad de su area que nos brinda el analisis.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_18.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En el robot analizado en su totalidad nos sirve para tener en cuenta que el robot se puede mover sin problemas en caso de una fuerza ejercida en cualquiera de los eslabones para su funcionamiento optimo del robot ya que se analizo con exito los puntos mas importantes  y no nos limito a obtener mas datos para su debida practica de analisis de elementos finitos.
+
+\section{Analisis de elementos finitos (Aluminio)}
+El analisis de elementos finitos es un metodo de aproximacion de problemas continuos, de tal forma que el continuo de divide en un numero finito de partes, "elementos" cuyo comportamiento se especifica mediante un numero finito de parametros asociados a ciertos puntos caracteristicos denominados "nodos". estos nodos son los puntos de union de cada elemento con adyacentes.\\
+La solucion del sistema completo sigue las reglas de los problemas discretos. El istema completo se forma por ensamblaje de los elementos. Las incognitas del problema dejan de ser funciones matematicas y pasan a ser el valor de estas funciones en los nodos.
+* El comportamiento en el interior de cada elemento queda definido a partir del coportamiento de los nodos mediante las adecuadas funciones de interpolacion o funciones de forma.
+
+\section{Aplicacion del metodo}
+La forma mas intuitiva de comprender el metodo, al tiempo que la mas extendida, es la aplicacion a una placa sometida a tension plana. MEF se puede entender desde un punto de vista esctructural, como una generalizacion del calculo matricial de estructuras al analisis de sistemas continuos. de hecho el metodo nacio por evolucion de aplicaciones a sistemas estructurales.\\
+*Un elemento finito e viene definido por sus nodos (i,j,m) y por su contorno por lineas que los unen. Los desplazamientos u de cualquier punto del elemento se aproximan por un vector.\\\\\\\\\\\\
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/Figura_1.jpeg}
+\caption{}
+\label{Figura 2.}
+\end{figure}
+
+N son funciones de posicion dadas( funciones de forma y a es un vector formando por los dezplazamientos nodales de los elementos considerados. Para el caso de tension plana.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_2.jpeg}
+\caption{}
+\label{Figura 3.}
+\end{figure}
+
+u: son los movimientos horizontal y vertical en un punto cualquiera del elemento.\\
+a: son los dezplazamientos del nodo i.\\\\
+
+Las funciones Ni, Nj, Nm, han de escogerse de tal forma que al sustiuir en la figura de arriba las coordenadas nodales, se obtengan los dezplazmientos nodales.\\
+Conocidos los dezplazamientos de todos los puntos del elemento , se pueden determinar las deformaciones en cualquier punto, que vendran por una realcion del tipo siguente:
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_3.jpeg}
+\caption{}
+\label{Figura 4.}
+\end{figure}
+
+Esta expresion es valida con caracter general cualesquiera que sean las relaciones entre tensiones y deformaciones, si la tensiones siguen una ley lines como se puede rescribir la ecuacion en la forma siguente.
+
+\section{Criterio de la parcela}
+Es conveniente que las funciones tengan la propiedad de valer la unidad un los nodos a los que estan asociadas y que tengan un valor nulo en el resto. Este tipo de elementos se llaman elementos conformes y seguran la comunidad de la ley de corrimientos entre elementos.\\
+Los elementos no conformes son, por lo tanto, los que no aseguran la unidad de la ley de corrimientos, hecho que provoca la existencia de deformaciones infinitas en el contorno entre elementos.
+
+\section{Tipos de forma.}
+En cada elemento se puede distiguir tres tipos de nodos,primarios,secundarios e intermedios.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_4.jpeg}
+\caption{}
+\label{Figura 5.}
+\end{figure}
+
+Las funciones deforman agrupan en dos familias principales en funcion del tipo de nodos.\\
+*serendipidas:En las que solo existen nodos frontera(primario y secundarios).\\
+*Lagrangianas:Incluyen adémas nodos intermedios.\\
+con el fin de conseguir un mayor ajuste ala geometria del cuerpo, existe tambien una interpolacion de tipo geometrico esto permite obtener elementos de lados curvos apartir de un elemento de referencia.\\\\
+Esto implica introducir un cambio de variable de las ecuaciones integrales que describen el comportamiento de los elementos las derivadas de las funciones que intervienen de la expresion de B son respecto a x,y,z, qu guardan ls relaciones respecto alas coordenadas locales.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_5.jpeg}
+\caption{}
+\label{Figura 6.}
+\end{figure}
+
+Donde J es de la matriz Jacabiana de la transformacion\\\\
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_6.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Los diferenciales de volumen en cada sistema de coordenadas vienen relacionados de la forma.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_7.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Una vez realizada la transformacion,la integracion es mas sencilla en el sistema de coordenadas local que en el catersiano(x,y,z,) en el que los dominios estan distorcionados. pero la obtencion del resultado final puede presentar ciertos problemas.
+
+\section{Imagenes del Anlisis de elementos finitos del robot cartesiano}
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_9.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La imagen muesta acerca el nombre del materia en que se hizo el analisis en este caso fue el alumino, que te aroja su densidad,tension y su nombre de la pieza en el que las piezas son de ese material elaborado, tanto el coeficiente de poisson y entre otros que nos sirven para determinar el material en el que se esta trabajando.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=10cm]{/home/sarha13/Escritorio/figura_8.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En esta parte del cuadrante arroja inventor una tabla de datos de otras piezas de diferente Material que de igual manera arroja su tabla de datos como la otra tabla anterior que se mostraba en el alumino.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=5cm]{/home/sarha13/Escritorio/figura_10.jpeg}
+\caption{}
+\label{Figura 11.}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=5cm]{/home/sarha13/Escritorio/figura_11.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+Tambien el analisis de elementos finitos lanza una tabla con datos de propiedades fisicas para determinar el peso el area que tendra el robot como se comporta la gravedad en los 3 ejes del mismo. el numero de nodos que es importante para el analisis matricial que se le puede hacer mas adelante en las futuras practicas y si con lleva una precision del elemento.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=6cm]{/home/sarha13/Escritorio/figura_13.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La fuerzas que nos arroja es para la interpretacion en el estado fisico para tener un idea de como se comportara cuando lo tengamos armado si soportaria mas peso de lo que se pudiera en los distintos ejes tanto en (x,y,x).
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_14.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+La carga de rodamiento es un dato que nos arroja porque es importante para el soporte de los motores nema17 ya que van ajustados precisamente alas bandas que le dan el desplazamiento al eje z para que pues moverse en los 3 ejes del sistema del robot.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=6cm]{/home/sarha13/Escritorio/figura_15.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En los datos de la configuracion de la malla nos habla sobre la interpretacion del tamaño de cada elemento por fraccion y el factor de modificacion y el angulo maximo de giro de los rodamientos del robot y como opciones usar la medida basda en la pieza del ensamblaje.\\\\\\\\\\
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=8cm]{/home/sarha13/Escritorio/figura_16.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En los datos de los resultados nos arroja como valores de frecuencia como lo marca y fue calculado de 11.83Hz y el resumen de los resultados de voumen y masa en total del robot que nos ayuda a interpretar su masa y podriamos calcular para saber su peso tambien ya que son los ultimos resultados que nos arrojan los elementos finitos del robot.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=10cm]{/home/sarha13/Escritorio/figura_17.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En el dezplazamiento con una masa que recorre los 3 ejes del robot cartesiano se debe a que nos mostraria un calor o esfuerzo o deformacion demas si el robot no soportara el peso en toda su totalidad de su area que nos brinda el analisis.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=9cm]{/home/sarha13/Escritorio/figura_18.jpeg}
+\caption{}
+\label{Figura 7.}
+\end{figure}
+
+En el robot analizado en su totalidad nos sirve para tener en cuenta que el robot se puede mover sin problemas en caso de una fuerza ejercida en cualquiera de los eslabones para su funcionamiento optimo del robot ya que se analizo con exito los puntos mas importantes  y no nos limito a obtener mas datos para su debida practica de analisis de elementos finitos.
+
+\section{conclusion}
+En el analisis de los elementos finitos se nos hizo una practica productiva y de aprendizaje con el que el analisis es demasiadas cosas que debemos que tener encuenta ademas de sus funciones matematicas para asi llevar el analisis que nos arroja a un nivel mayor y en la interpretacion antes de construirlo es lo que hace a un ingeniero a ser diferente, que no primero se construye y luego se analiza aver como susederan las cosas, y que primero se debe de analizar con medidad y fundamentos matematicos el proyecto que se llevara acabo.\\\\
 
 \end{document}
