@@ -1,0 +1,566 @@
+\documentclass[letter,operight,12pt,spanish]{report}
+
+\usepackage{color}
+
+\usepackage{graphicx}
+
+\usepackage{epsfig}
+
+\usepackage{multirow}
+
+\usepackage{colortbl}
+
+\usepackage[table]{xcolor}
+
+\usepackage{vmargin}
+
+\usepackage[spanish]{babel}
+
+%Gummi|065|=)
+\title{\textbf{Biorreactor.}}
+\author{Cinematica de Robots.\\
+		Ingenieria en Mecatr\'onica 7A}
+\date{20 de septiembre de 2019}
+
+\begin{document}
+
+\thispagestyle{empty} %% PARA QUITAR FORMATO DE PIES Y ENCABEZADOS DE PÁGINA A LA PORTADA
+%
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%% MINIPAGE PARA EL LOGO DEL LADO IZQUIERDO (UNIVERSIDAD) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[c][0.15\textheight][c]{0.14\textwidth}
+    \begin{center}
+\includegraphics[height=2cm, keepaspectratio=true]{/home/sarha13/Escritorio/upzmg.jpeg} %% LOGO IZQUIERDO
+    \end{center}
+\end{minipage}
+%}
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%%%%%% MINIPAGE PARA EL CUERPO DE LA PORTADA (NOMBRES, TITULOS, ETC.) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[c][0.17\textheight][t]{0.7\textwidth}
+    \begin{center}
+        {\scshape \Huge Universidad Politecnica ZMG} %% NOMBRE DE LA UNIVERSIDAD
+        \vspace{.5cm}   %% DEFINE EL ESPACIO ENTRE EL NOMBRE DE LA UNIVERSIDAD Y LA LÍNEA DOBLE
+        \hrule height2.5pt  %% DEFINE EL ANCHO DE LA PRIMER LÍNEA
+        \vspace{.1cm}    %% DEFINE EL ESPACIO ENTRE LAS DOS LINEAS
+        \hrule height1pt  %% DEFINE EL ANCHO DE LA SEGUNDA LINEA (NORMALMENTE ES MAS DELGADA)
+        \vspace{.4cm}   %% DEFINE EL ESPACIO ENTRE LA DOBLE LINEA Y EL NOMBRE DE LA DIVISIÓN
+        {\scshape \LARGE Divisi\'on Acad\'emica de Mecatr\'onica}  %% NOMBRE DE LA DIVISIÓN
+    \end{center}
+\end{minipage}
+%}
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%   ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%% MINIPAGE PARA EL LOGO DEL LADO DERECHO (DIVISIÓN ACADÉMICA)
+%
+%
+%
+%
+%\fbox{
+%}
+%
+%
+%
+%
+%
+%    ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%%%%%%% RENGLÓN DE ABAJO DEJADO INTENCIONALMENTE EN BLANCO PARA GENERAR NUEVO COMIENZO DE PÁRRAFO  %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%
+%  ESPACIO COMENTADO PARA EVITAR DESAJUSTES POR GENERACIÓN DE NUEVO PÁRRAFO (NO DEJAR ESPACIOS ENTRE MINIPAGES)
+%
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%% 5TO MINIPAGE PARA EL CUERPO DE LA PORTADA (NOMBRES, TÍTULO, ETC.) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%\fbox{
+\begin{minipage}[l][0.78\textheight][t]{0.1\textwidth}
+    \begin{center}
+    \hskip0pt
+    \vrule width2.5pt height17cm    %% height definde la altura de la linea gruesa
+        \hskip1mm
+        \vrule width1pt height17cm  %% height define la altura de la linea delgada
+        \end{center}
+\end{minipage}
+%}
+%\fbox{
+\begin{minipage}[c][0.78\textheight][t]{0.8\textwidth}
+      \begin{center}
+      \vspace{2cm}
+        {\Large \scshape {Biorreactor}}
+
+        \vspace{2cm}
+
+        \makebox[5cm][c]{\LARGE Proyecto}  \\[20pt]
+        Que para obtener el t\'itulo de:\\[5pt]
+        {\Large \textbf{{Ingeniero en Mecatronica}}}\\[40pt]
+        PRESENTA:\\[12pt]
+        \textbf{ \Large {Alcala Villagom\'e Mario.\\
+        				Becerra I\~niguez Diego Armando.\\
+        				Martinez Velazquez Lisbeth.\\
+        				Murgu\'ia Ch\'avez Nadia Sarahi.\\
+        				Ramos Ch\'avez Brayan Oswaldo.}}
+
+        \vspace{2cm}
+
+        { \small Directores}:\\ {Ing. Moran Grabito Carlos Enrique}\\{Ing. Razo Cerda Rosa Mar\'ia}
+        \vspace{2.5cm}
+
+        { Tlajomulco de Zuñiga, Jalisco} \hskip2.5cm {Septiembre de 2019}
+      \end{center}
+\end{minipage}
+%}
+
+\maketitle
+
+\section{Problematica}
+
+
+Un biorreactor es un recipiente o sistema que mantiene un ambiente biol\'ogicamente activo. En algunos casos, un bioreactor es un recipiente en el que se lleva a cabo un proceso qu\'imico que involucra organismos o sustencias  bioqu\'imicas activas derivadas de dichos organismos. Este proceso puede ser aer\'obico o anaerobio. Estos biorreactores son conm\'unmente cil\'indricos, variando en tama\~no desde algunos mililitros hasta metros c\'ubicos y son usualmente fabricados en acero inoxidable.
+
+Un biorreactor puede ser tambi\'en un dispositivo o sistema empleado para hacer crecer c\'elulas o tejidos en operaciones de cultivo. Estos dispositivos se encuentran  en desarrollo para su uso en ingenier\'ia de tejidos. En t\'erminos generales, un biorreactor busca mantener ciertas condiciones ambientales propias (pH, temperatura, concentraci\'on de ox\'igeno, etc.) al organismo o sustancia qu\'imica que se cultiva. El dise\~no de los biorreactores es una tarea de ingenier\'ia relativamente compleja y dif\'icil. Los microorganismos o c\'elulas  son capaces de realizar su funci\'on deseada con gran eficiencia bajo condiciones \'optimas. Las condiciones ambientales de un biorreactor tales como flujo de gases (por ejemplo, ox\'igeno, nitr\'ogeno, dioxido de carbono, etc.), temperatura, pH, ox\'igeno disuelto y velocidad de agitaci\'on o circulaci\'on, deben ser cuidadosamente monitoreadas y controladas.
+
+Por lo general al momento de realizar un biorreactor estos cuentan con medidores manuales que deben ser monitoreados en un detemrinado tiempo pero constante por los laboratoristas, al ser un trabajo que se tiene que ser constante, el personal que se encarga del monitoreo de las mediones tales como son el pH, temperatura, presi\'on e incluso la liberaci\'on de la presi\'on. 
+
+\subsection{Objetivo General}
+
+Elaboraci\'on de un sistemas semi-automatizado para  la toma de pH, temperatura y presi\'on de un biorreactor as\'i como la instalaci\'on de una valvula de liberaci\'on de presi\'on controlada mediante estandares requeridos.
+
+\subsubsection{Objetivos del proyecto}
+
+$\diamond$ Modelado matematico de los sensores.
+
+$\diamond$ Dise\~no y simulaci\'on del funcionamiento de los sensores dentro del biorreactor.
+
+$\diamond$ Utilizaci\'on de base de datos para el registro de datos arrojados por los sensores.
+
+$\diamond$ Selecci\'on y elecci\'on de sensores y actuadores.
+
+\subsection{Justificaci\'on}
+
+La implementaci\'on de un sistema semi-automatizado dentro de un biorreactor es util, puesto que se puede tener un control y ordenamiento de los datos necesarios para el monitoreo de las medidas necesarias para el control y supervici\'on del proceso dentro del biorreactor, de esta manera el laboratorista tiene una mejor lectura de sus datos sin tener que estar la mayoria del tiempo tomando medidas, pues se pretende que el sistema ayude a que las lecturas sean m\'as claras y con mayor accesibilidad de una base de datos para consultoria del estado del proceso.
+
+\subsection{Delimitaci\'on}
+
+Una de las limitaciones que se presentan es que los sensores tiene que ser especialmente de grado alimenticio, puesto que tendran contacto con productos que se daran a consumo.
+
+Adem\'as de que el biorreactor a donda va dirijido este proyecto, solo realiza cierto tipo de procesos, por lo que no es un biorreactor universal, debido a esto se requiere dise\~nar y adapatar sistemas para este biorreactor.
+
+\section{Cronograma de actividades}
+
+\subsection{Matriz de posibles materiales y costos}
+
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+	\textbf{Materiales} & \textbf{costo}\\
+\hline
+	Sensor de temperatura & 300\\
+\hline
+	Sensor de pH & 820\\
+\hline
+	Arduino & 400\\
+\hline
+	Sensor de presi\'on & 800\\
+\hline
+	Electro valvula & 250\\
+\hline
+	Sensor de flujo de agua & 300\\
+\hline
+	Microcontrolador & 500\\
+\hline
+	Total & 3,370\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Matriz de roles}
+
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+	\textbf{Signo} & \textbf{Leyenda}\\
+\hline
+	P & Responsabilidad\\
+\hline
+	C & Colabora\\
+\hline
+	I & Suministra informaci\'on a los dem\'as\\
+\hline
+	MN & Mario Alcala Villagom\'ez y Nadia Sarahi Murgu\'ia Ch\'avez\\
+\hline
+	DB & Diego Armando Becerra Iñiguez y Brayan Oswaldo Ramos Ch\'avez\\
+\hline
+	LN & Lisbeth Martinez Velazquez y Nadia Sarahi Murgu\'ia Ch\'avez\\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\subsection{Diagrama Gantt}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+	\textbf{Actividades} & \textbf{MN} & \textbf{DB} & \textbf{LN} & \textbf{Fecha}\\
+\hline
+	Titulo del proyecto & P & C & I & 16 al 20 septiembre\\
+\hline
+	Planteamiento del problema & I & P & C & 16 al 20 septiembre\\
+\hline
+	Formular el Problema & I & C & P & 16 al 20 septiembre\\
+\hline
+	Objetivo general del proyecto & P & I & C & 16 al 20 septiembre\\
+\hline
+	Objetivos del proyecto & P & C & I & 16 al 20 septiembre\\
+\hline
+	Justificaci\'on & C & C & P & 16 al 20 septiembre\\
+\hline
+	Delimitaci\'on & C & I & P & 16 al 20 septiembre\\
+\hline
+	Matriz de posibles costos materiales & P & C & I & 16 al 20 septiembre\\
+\hline
+	Matriz de roles & I & C & P & 16 al 20 septiembre\\
+\hline
+	Diagrama de Gantt & P & I & C & 16 al 20 septiembre\\
+\hline
+	Explicaci\'on de la aportaci\'on de cada materia & C & P & I & 16 al 20 septiembre\\
+\hline
+	Desarroyollo del proyecto & P & C & IP & -\\
+\hline
+	Bibliograf\'ia & PI & CI & IP & -\\
+\hline
+	Total P & 7 & 2 & 6 & -\\
+\hline
+	Total C & 3 & 8 & 3 & -\\
+\hline
+	Total I & 4 & 4 & 6 & -\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Relaci\'on de materias}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+	\textbf{Materias de 7to} & \textbf{Detalles de la Aportanci\'on al proyecto}\\
+\hline
+	\textbf{Ingles VII} & Comprenci\'on y Traducci\'on de articulos, libros\\
+	& y manuales consultados.\\
+\hline
+	\textbf{Termodinamica} & Analisis de temperatura para el manejo \\ & de sensores y el sensor de temperatura\\
+\hline	
+	\textbf{Modelado de sistemas} & Modelado matematico para el an\'alisis\\
+	& para el uso de los sensores y sus\\ & respuestas\\
+\hline
+	\textbf{Administraci\'on y de proyectos} & Gesti\'on y organizacion, planeaciones\\
+	& y control de recursos economicos, materiales\\
+	& y humanos.\\
+\hline
+	\textbf{Cinematica de robots} & Calculo y especificaciones matematicas\\
+	& para la correcta estuturaci\'on del\\ & biorreactor\\
+\hline
+\textbf{Dise\~no y selecci\'on de materiales} & Dise\~no y simulaci\'on de la\\ & estructura del biorreactor\\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\section{Introducci\'on}
+
+Este proyecto nace de la necesidad de dise\'nar un sistema de monitoreo de variables (pH, temperatura, presi\'on, liberaci\'on de presi\'on) y una lectura digital usando un almacenamiento mediante el uso de base de datos visualizados desde una PC con una interfaz grafica para un bioreactor, dado que por unlado se podr\'ia contaminar el contenido del proceso dentro de la c\'amara del biorreactor, los sensores empleados en el interior de la c\'amara del biorreactor tienen que ser de grado alimenticio. 
+
+\section{Desarrollo}
+
+\subsection{Control de temperatura.}
+
+El sistema de control propuesto puede ser utilizado para el control de temperatura de biorreactores que puede ser utilizados en el \'area de desarrollo, as\'i como en el \'area de investigaci\'on en donde es necesario realizar el cultivo de microorganismos o el crecimiento de c\'elulas o tejidos en condiciones controladas y en presencia de aire.
+
+\subsection{Sensor de temperatura}
+
+El control de temperatura se encargara de obtener las lecturas en un detemrinado tiempo previamente programado,  que se reflejaran en la base de datos de acuerdo a esto, si la base de datos registra una lectura fuera de los paramentros se dara una alerta para activar y desactivar (encender y apagar) el refigerador en el que se mete para controlar la temperatura en caso de ser elevada para el proceso que se lleva acabo.
+
+El tipode sensor que se utiliz\'o son los LM35 de empaquetado T0-92, los cuales nos dan una tensi\'on de salida lineal, directamente proporcional a la temperatura  medida en grados centr\'igrados. Estos dispositivos entrega 10 [mV] por grado cent\'igrado. Tiene un intervalo de acci\'on que va desde los -55°C hasta los 150°C.
+
+Los puntos por los que se selecciono este dispositivo son su bajo precio, la lectura que nos ofrece, ya que es directamente proporcional a la temperatura censada y basta con polarizarla con una fuente sencilla para su funcionamiento.
+
+El sensor de temperaturaa principal se encuentra en el tanque, este monitorea la temperatura del temperatura en el exterior del biorreactor, si la temperatura no es la \'optima, la PC activa y desactiva la refigeraci\'on para retirar o proporcionar el calor necesario al interior del biorreactor.
+
+En el inteiror del biorreactor se encuentra otro sensor de temperatura como centinela para monitorear que la temperatura de la mezcla en estudio sea la adecuada, tambien es encesario agitar esta mezcla para tener una lectura de temperatura correcta.
+
+\subsection{Determinaci\'on de los modelos matematicos.}
+
+\subsubsection{Sistema de medici\'on}
+
+El modelo did\'actico de control cuenta con 2 sensores de temperatura, cada uno de ellos se usa para medir un punto espec\'ifico, estos 2 puntos son: la temperatura externa y la temperatura interna. Para el rango de temperatura a trabajar se tiene una se\~nal de voltaje que var\'ia entre 230 [mV] y 1
+[V], esta se\~nal es necesario acondicionarla para obtener un rango de salida entre 0 y 5 V, el acondicionamiento de se\~nal se muestra en la \ref{figura 1}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/circuirto.png}
+\caption{Circuito}
+\label{}
+\end{figure}
+
+
+\subsubsection{Sistema de potencia}
+
+El elemento final de control trabaja con una alimentaci\'on de 120 [VAC] y una potencia de 100 [W]. 
+
+Para el control de potencia se utilizara la activaci\'on del trigger de un triac. EL disparo del triac permite que pase corriente a la carga, este paso de corriente es controlado por fase como se muestra en la \ref{figura 2}. El control del trigger se realiza por medio de un cambio en el voltaje de 0 a 5 [V], es decir, cuando se tiene 0 [V] el \'angulo de disparo es de 0° y cuando se tiene 5[V] el \'angulo de siparo es de 180°.\\\\\\\\\\\\\\\\\\\\\\\\
+ 
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/potencia.png}
+\caption{Circuito de potencia}
+\label{}
+\end{figure}
+ 
+ \subsubsection{Sistema de adquisici\'on de adatos}
+
+Una vez acondicionados los 2 sensores se procede a desarrollar un m\'etodo para adquirir los datos el cual es implementado en LabVIEW. El m\'etodo de adquisici\'on se muestra en la \ref{Figura 3} realizo por medio de la tarjeta Rasberry Pi. El m\'etodo de adquisici\'on se utiliza la configuraci\'on de un canal como entrada an\'aloga, se define el reloj para el muestreo, se muestrea continuamente hasta que usuario detiene el modo de adquisici\'on, al final se guarda todo en un archivo y se limpian todas las tareas y rpocesos abiertos en el sistema operativo.
+
+\textbf{A. T\'ecnica de identifcaci\'on}
+
+La identificaci\'on de sistemas tiene por objeto obtener el modelo de un sistema din\'amico apartir de datos experimentales, en los cuales se tienen en cuenta las variables de entrada, variables de salida y las posibles perturbaciones que afectan al sistema.
+
+para realizar una identificaci\'on es necesario realizas los siguientes pasos:
+
+Recolecci\'on de datos: Primero se define qu\'e variables se van a medir y cu\'ales van a ser las se\~nales de entrada que afecten al sistema.
+
+Selecci\'on del modelo: Se realiza a apartir de un grupo de modelos, se elige el m\'as adecuado y representativo del sistema.
+
+Validaci\'on del modelo: La evaluaci\'on de la calidad del modelo se basa en determinar c\'omo se desempe\~na el modelo cuando se trata de reproducir con \'el los datos obtenidos experimentalmente, seg\'un el comportamiento del sistema se acepta o se rechaza el modelo seleccionado para la identificaci\'on.
+
+\textbf{B. M\'etodo de m\'inimos cuadrados}
+
+Este m\'etodo es la base de distintos m\'etodos param\'etricos recursivos y no recursivos de identificaci\'on en el cual se trata de identificar los coeficientes $\theta_{ij}$ del sistema de ecuaciones propuesto en el modelo, estas ecuaciones se representan como un sistema lineal.
+
+\begin{equation}
+\hat{y}_1=\hat{\theta}_{11}x_1+\hat{\theta}_{12}x_2+...+\hat{\theta}_{1r}x_n
+\end{equation}
+
+\begin{equation}
+\hat{y}_2=\hat{\theta}_{21}x_1+\hat{\theta}_{22}x_2+...+\hat{\theta}_{2r}x_n
+\end{equation}
+
+\begin{center}
+\textbf{.}\\
+\textbf{.}\\
+\textbf{.}\\
+\end{center}
+\begin{equation}
+\hat{y}_r=\hat{\theta}_{r1}x_1+\hat{\theta}_{r2}+...+\hat{\theta}_{m}x_n
+\end{equation}
+
+Donde \textit{r} es le n\'umero de salidas del sistema y \textit{n} es el n\'unmero de entradas al sistema.
+
+La ecuaci\'on \ref{1} se puede representar como:
+
+\begin{equation}
+y=X\theta
+\end{equation}
+
+\begin{equation}
+z=X\theta+v
+\end{equation}
+
+Donde $z=[z(1)z(2)...z(n)]^T$ es el vector de salida estimada del sistema, $\theta=[\theta_0 \theta_2...\theta_n]^T$ es el vector de par\'ametros para estimar , $X=[1 \xi_1...\xi_n]$ e sla matriz de estados de la cual depende la se\~nal de salida $v=[v(1) v(2)...v(n)]^T$ es el vector de la medici\'on del error.
+
+EL objetivo de este m\'etodo de identificaci\'on es minimizar la suma del error cuadr\'atico cometido en \textit{K} medidas, para ello se define el error como la defirencia entre el valor medido y el estimado, y se busca minimizar el \'indice de comportamiento \textit{J}:
+
+\begin{equation}
+J=\frac{1}{2}(z-x\theta)^T(z-x\theta)
+\end{equation}
+
+El valor de $\theta$ que minimiza a $J(\theta)$ debe satisfacer que $\frac{\partial{J}}{\partial{\theta}}=0$. Al derivar \ref{4} se tiene:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{\theta}}=-X^Tz+X^TX\hat{\theta}=0
+\end{equation}
+
+\begin{equation}
+X^Tz=X^TX\hat{\theta}
+\end{equation}
+
+\begin{equation}
+X^T(z-X\hat{\theta})=0
+\end{equation}
+
+Al despejar $\hat{\theta}$ \ref{6} se obtiene el valor estimado $\hat{\theta}$:
+
+\begin{equation}
+\hat{\theta}=(X^TX)^{-1}X^Tz
+\end{equation}
+
+Con
+
+\begin{equation}
+E(v)=0	E(vv^T)=\sigma^2I
+\end{equation}
+
+\textbf{C. Metodolog\'ia propuesta}
+
+Para el desarrollo del medelo matem''atico aplicado al sistema de temperatura se siguieron los siguentes pasos: primero se modela el sistema aprtir de leyes f\'isicas, una vez se tiene el modelo se detemrina los par\'ametros desconocidos y la dependencia de \'estos con las variables del proceso; luego se toman los datos, para ello se debe garantizar la calibraci\'on de los instrumentos; una vez se toman los datos se realizan la identificaci\'on de los par\'ametros desconocidos por el m\'etodo de m\'inimos cuadrados. Los datos que arroja el m\'etodo de m\'inimos cuadrados deben ser validados, para ello se toman nuevamente datos con una se\~nal de excitaci\'on diferente a los datos tomadosanteriormnete, se comaran estos datos con el modelo y se calcula el \'indice de desempe\~no, el cual dir\'a si el modelo es confiable o hay que volver a estimar los par\'ametros.
+
+\subsubsection*{Modelo mmatem\'atico del sistema}
+
+En la tabla 1 se detallan las variables usadas en el modelo matem\'atico.\\
+
+\begin{tabular}{|c|c|}
+\hline
+	Variable & Definici\'on de las variables\\
+\hline
+	$H_e$ & Flujo de calor suministrado por el\\  & elemento de potencia\\ 
+\hline
+$H_s$ & Flujo de calor al interior del m\'odulo de temperatura\\
+\hline
+$H_m$ & Flujo de calor en las paredes del m\'odulo de temperatura\\
+\hline
+	Q & Velocidad del flujo de calor en el sistema a controlar\\
+\hline
+ $R_th$ & Resistencia t\'ermica del bombillo\\
+\hline
+	$k_1$ & Conductividad t\'ermica $=1/Rt$\\
+\hline
+	C & Capacidad calorifica\\
+\hline
+	M & Masa del cuerpo\\
+\hline
+	c & Calor especifico\\
+\hline
+	$T_a$ & Temperatura en el exterior del sistema (Temperatura ambiente)\\
+\hline
+	$T_s$ & Temperatura al interior del m\'odulo de temperatura\\
+\hline
+$T_h$ & Temperatura del elemento final de control (resistencia t\'ermica)\\
+\hline
+\end{tabular}
+
+Para obtener el modelo se tiene la ecuaci\'on de equilibrio t\'ermico descrita.
+
+\begin{equation}
+H_e=H_s+H_m
+\end{equation}
+
+Donde $H_m$ es el flujo de calor en la pared del material del m\'odulo de temperatura, el cual se da por convecci\'on, esta ley afirma que si exite una diferencia de temperatura en el interior de un l\'iquido o gas, es casi seguro se producir\'a un movimineto del fluido. Este movimiento transfiere calor de una parte del fluido a otra por un proceso llamaddo convecci\'on. El calentamiento de un sistema cerrado mediante un elemento generador de calor no depende tanto de la radiacci\'on como de las corrientes naturales de convecci\'on, que hacen que el aire caliente suba hacia el techo y el aire fr\'io del resto del sistema se dirija hacia el elemento generador de calor.
+
+Donde $H_s$ es el flujo de calor en el sistema al interior del m\'odulo de temperatura, el cual se presenta por conducci\'on, esta ley afirma que la velocidad de conducci\'on de calor a trav\'es de un cuerpo por unidad de secci\'on trasnversal es proporcional al gradiente de temperatura que existe en el cuerpo (con el signo cmabiado). EL factor de proporcionalidad se denomina conductividad t\'ermica del material. Los materiles como el oro, la plata o el cobre tienen conductividades t\'ermicas elevadas y conducen bien el calor, mientras que materiales como el vidrio o el amianto tiene conductividades cientos e incluso miles de veces menores; conducen muy mal el calor, y se conocen como aislantes.
+
+\begin{equation}
+H_s=\frac{Q}{A}
+\end{equation}
+
+\begin{equation}
+Q=C\frac{d}{dt}T_s
+\end{equation}
+
+La capacidad calor\'ifica var\'ia seg\'un la sustancia, en el caso de estudio la sustancia objeto de analisis es aire seco, el cual es el que circula al interior del m\'odulo de temperatura. SU relaci\'on con el calor espec\'ifico es: $C\}M*c$, donde la masa del cuerpo es una relaci\'on entre el volumen y la densidad depende de la temperatura y de la presi\'on.
+
+El calor espec\'ifico es la cantidad de calor necesaria para elevar la temperatura de una unidad de masa d euna sustancia en un grado, esta depende de la temperatura.
+
+\begin{equation}
+H_e=\frac{C}{A}\frac{d}{dt}T_s+\frac{(T_e-T_s)}{R_t}
+\end{equation}
+
+Donde $R_t$ es un p\'arametro que se encuentra por medio de identificiaci\'on de sistemas param\'etrica por el m\'etodo de m\'inimos cuadrados.
+
+Para la aplicaci\'on de la t\'ecnica de identificaci\'on se debe tomar datos del sistema, tanto de la temperatura del medio ambiente, en el elemento calefactor y en el sistema que se quiere modelar.
+
+Del modelo se detemrina las variables que afectan la resistencia t\'ermica $T_s$, $T_a$, $H_e$. 
+
+Primero se define la matriz de estados.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.00]{/home/sarha13/Escritorio/matriz.png}
+\caption{}
+\label{}
+\end{figure}
+
+Segundo se define el vector de par \'ametros a estimar:
+
+\begin{equation}
+\theta_1=[Rt0	Rt(T_e-T_s)/(H_e)]
+\end{equation}
+
+Tercero se define los vectores de las salidas estimadas, calculados a partir de los datos sensados.
+
+\begin{equation}
+z_2=[Rt(1) Rt(2)...Rt(N)]^T
+\end{equation}
+
+Por \'ultimo se calcula los par\'ametros a estimar con las siguientes ecuaciones:
+
+\begin{equation}
+\hat{\theta}_1=(X^TX)^1X^Tz_1
+\end{equation}
+
+\end{document}
